@@ -1,125 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+// ===== HEALINK =====
 
-<title>HEALINK</title>
+// Daily Affirmation
+const affirmations = [
+  "Pelan-pelan ya, kamu sedang bertumbuh. 🤍",
+  "Tidak apa-apa kalau hari ini terasa berat.",
+  "Kamu layak mendapatkan ketenangan.",
+  "Semua akan membaik pada waktunya.",
+  "Tarik napas, hembuskan perlahan.",
+  "Kamu lebih kuat daripada yang kamu kira."
+];
 
-<link rel="stylesheet" href="style.css">
+// Tampilkan afirmasi saat website dibuka
+window.onload = function () {
+  alert(affirmations[Math.floor(Math.random() * affirmations.length)]);
+};
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+// Tombol Start Healing
+const startBtn = document.getElementById("startBtn");
 
-</head>
-
-<body>
-
-<nav>
-
-<div class="logo">
-🌿 HEALINK
-</div>
-
-<ul>
-
-<li>Home</li>
-
-<li>Healing Space</li>
-
-<li>Mood Tracker</li>
-
-<li>Journal</li>
-
-<li>AI Chat</li>
-
-</ul>
-
-</nav>
-
-<section class="hero">
-
-<div class="overlay">
-
-<h1>Healing & Emotional Awareness Link</h1>
-
-<p>
-
-Take a deep breath.
-
-You are safe here.
-
-Healing takes time,
-
-and that's okay.
-
-</p>
-
-<button id="startBtn">
-
-Start Healing 🤍
-
-</button>
-
-</div>
-
-</section>
-
-<section class="features">
-
-<div class="card">
-
-<h2>🌧 Virtual Healing Space</h2>
-
-<p>
-
-Choose your favorite calming place.
-
-Forest • Beach • Rain • Lofi Room
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>😊 Mood Tracker</h2>
-
-<p>
-
-Track your emotions everyday.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>📖 Healing Journal</h2>
-
-<p>
-
-Write everything without fear.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<h2>🤖 AI Healing Assistant</h2>
-
-<p>
-
-Get song recommendations and healing activities.
-
-</p>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+if (startBtn) {
+  startBtn.addEventListener("click", function () {
+    alert("🌿 Selamat datang di HEALINK.\nMari mulai perjalanan healing-mu.");
+  });
+}
